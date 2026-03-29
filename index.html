@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <main class="dashboard">
+    <section class="profile">
+      <div class="profile__header">
+        <img src="assets/images/image-jeremy.png" alt="Jeremy Robson" class="profile__avatar">
+        <div class="profile__info">
+          <span class="profile__label">Report for</span>
+          <h1 class="profile__name">Jeremy Robson</h1>
+        </div>
+      </div>
+
+      <nav class="profile__nav">
+        <ul class="profile__menu">
+          <li>
+            <button
+              class="profile__menu-item"
+              aria-pressed="false"
+              data-timeframe="daily">
+              Daily
+            </button>
+          </li>
+          <li>
+            <button
+              class="profile__menu-item profile__menu-item--active"
+              aria-pressed="true"
+              data-timeframe="weekly">
+              Weekly
+            </button>
+          </li>
+          <li>
+            <button
+              class="profile__menu-item"
+              aria-pressed="false"
+              data-timeframe="">
+              Monthly
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="cards">
+      <article class="card card--work">
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__title">Work</h2>
+            <button
+              class="card__menu"
+              aria-label="Open menu">
+            </button>
+          </div>
+
+          <div class="card__body">
+            <!-- 5hrs daily -->
+            <!-- Last - 7hrs daily -->
+            <p class="card__hours">32hrs</p>
+            <p class="card__previous">
+              Last <span class="card__period">Week</span> - 36hrs
+            </p>
+            <!-- 103hrs monthly -->
+            <!-- Last - 128hrs monthly -->
+          </div>
+        </div>
+      </article>
+      <article class="card card--play">
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__title">Play</h2>
+            <button
+              class="card__menu"
+              aria-label="Open menu">
+            </button>
+          </div>
+
+          <div class="card__body">
+            <!--1hr daily -->
+            <!-- Last - 2hrs daily -->
+            <p class="card__hours">10hrs</p>
+            <p class="card__previous">
+              Last <span class="card__period">Week</span> - 8hrs
+            </p>
+            <!-- 23hrs  monthly -->
+            <!-- Last - 29hrs  monthly -->
+          </div>
+        </div>
+      </article>
+      <article class="card card--study">
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__title">Study</h2>
+            <button
+              class="card__menu"
+              aria-label="Open menu">
+            </button>
+          </div>
+
+          <div class="card__body">
+            <!-- 0hrs daily -->
+            <!-- Last - 1hr daily -->
+            <p class="card__hours">4hrs</p>
+            <p class="card__previous">
+              Last <span class="card__period">Week</span> - 7hrs
+            </p>
+            <!-- 13hrs monthly -->
+            <!-- Last - 19hrs monthly -->
+          </div>
+        </div>
+      </article>
+      <article class="card card--exercise">
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__title">Exercise</h2>
+            <button
+              class="card__menu"
+              aria-label="Open menu">
+            </button>
+          </div>
+
+          <div class="card__body">
+            <!-- 1hr daily -->
+            <!-- Last - 1hr daily -->
+            <p class="card__hours">4hrs</p>
+            <p class="card__previous">
+              Last <span class="card__period">Week</span> - 5hrs
+            </p>
+            <!-- 11hrs monthly -->
+            <!-- Last - 18hrs monthly -->
+          </div>
+        </div>
+      </article>
+      <article class="card card--social">
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__title">Social</h2>
+            <button
+              class="card__menu"
+              aria-label="Open menu">
+            </button>
+          </div>
+
+          <div class="card__body">
+            <!-- 1hr daily -->
+            <!-- Last - 3hrs daily -->
+            <p class="card__hours">5hrs</p>
+            <p class="card__previous">
+              Last <span class="card__period">Week</span> - 10hrs
+            </p>
+            <!-- 21hrs monthly -->
+            <!-- Last - 23hrs monthly -->
+          </div>
+        </div>
+      </article>
+      <article class="card card--self-care">
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__title">Self Care</h2>
+            <button
+              class="card__menu"
+              aria-label="Open menu">
+            </button>
+          </div>
+
+          <div class="card__body">
+            <!-- 0hrs daily -->
+            <!-- Last - 1hr daily -->
+            <p class="card__hours">2hrs</p>
+            <p class="card__previous">
+              Last <span class="card__period">Week</span> - 2hrs
+            </p>
+            <!-- 7hrs monthly -->
+            <!-- Last - 11hrs monthly -->
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>
