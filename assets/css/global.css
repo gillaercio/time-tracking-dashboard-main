@@ -50,7 +50,8 @@ html {
 
   --rubik: 'Rubik', sans-serif;
 
-  --text-sm: 300 1rem/120% var(--rubik);
-  --text: 400 1.6rem/120% var(--rubik);
-  --text-lg: 500 2rem/120% var(--rubik);
+  --text-sm: 500 1.6rem/120% var(--rubik);
+  --text: 2.4rem/120% var(--rubik);
+  --text-title: 500 2rem/120% var(--rubik);
+  --text-lg: 3.2rem/120% var(--rubik);
 }
