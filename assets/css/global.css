@@ -47,11 +47,12 @@ html {
   --Navy-900: hsl(235, 46%, 20%);
   --Purple-500: hsl(235, 45%, 61%);
   --Navy-200: hsl(236, 100%, 87%);
+  --White: hsl(0, 100%, 100%);
 
   --rubik: 'Rubik', sans-serif;
 
   --text-sm: 500 1.6rem/120% var(--rubik);
   --text: 2.4rem/120% var(--rubik);
-  --text-title: 500 2rem/120% var(--rubik);
+  --text-title: 500 1.8rem/120% var(--rubik);
   --text-lg: 3.2rem/120% var(--rubik);
 }

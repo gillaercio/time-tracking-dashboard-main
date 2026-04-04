@@ -1,3 +1,7 @@
+body {
+  background-color: var(--Navy-950);
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,8 +9,6 @@
   gap: 2rem;
   min-height: 100vh;
   padding: 1.5rem 1rem;
-  background-color: var(--Navy-950);
-  border: 1px solid white;
 }
 
 .profile,
@@ -25,7 +27,6 @@
 .profile__header {
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: space-around;
   padding: 2.5rem 2rem;
   background-color: var(--Purple-600);
@@ -83,48 +84,38 @@
 
 .card {
   border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: top -15px right 15px;
 }
 
 .card__work {
   background-color: var(--Orange-300);
   background-image: url(../images/icon-work.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 20px;
 }
 
 .card__play {
   background-color: var(--Blue-300);
   background-image: url(../images/icon-play.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 20px;
 }
 
 .card__study {
   background-color: var(--Pink-400);
   background-image: url(../images/icon-study.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 20px;
 }
 
 .card__exercise {
   background-color: var(--Green-400);
   background-image: url(../images/icon-exercise.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 20px;
 }
 
 .card__social {
   background-color: var(--Purple-600);
   background-image: url(../images/icon-social.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 20px;
 }
 
 .card__self-care {
   background-color: var(--Yellow-300);
   background-image: url(../images/icon-self-care.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 20px;
 }
 
 .card__content {
@@ -146,7 +137,7 @@
 }
 
 .card__menu {
-  width: 21px;
+  width: 25px;
   height: 10px;
   border: none;
   background-color: transparent;
@@ -175,31 +166,35 @@
 
 @media screen and (min-width: 1440px) {
   .dashboard {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 250px 1fr;
     gap: 2.5rem;
+    max-width: 1100px;
     justify-content: center;
+    margin: 0 auto;
   }
   
   .profile,
   .cards {
-    width: min(100%, 1400px);
-    height: 100% auto;
+    width: 100%;
   }
 
   .profile {
-    align-items: center;
-    width: 200px;
+    justify-content: space-between;
   }
   
   .profile__header {
     flex-direction: column;
-    align-items: start;
-    gap: 2rem;
-    padding-block: 3rem;
+    align-items: flex-start;
+    gap: 3.5rem;
+    padding: 3rem;
   }
 
   .profile__info {
-    padding-block: 1rem;
+    padding-block: 1.4rem;
+  }
+
+  .profile__label {
+    font-size: 1.2rem;
   }
   
   .profile__name {
@@ -207,26 +202,28 @@
     padding-bottom: 2rem;
     font-size: clamp(2.4rem, 2.6rem + 1.5vw, 3.2rem);
   }
-  
-  .profile__menu {
-    flex-direction: column;
-    gap: 1.4rem;
+
+  .profile__name,
+  .profile__menu-item--active,
+  .card__title,
+  .card__hours {
+    color: var(--White);
   }
   
   .profile__nav {
     align-self: flex-start;
-    padding: 2.5rem;
+    padding: 2.5rem 3rem;
+  }
+  
+  .profile__menu {
+    flex-direction: column;
+    gap: 1.4rem;
   }
 
   .cards {
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
     gap: 2.5rem;
-  }
-
-  .card {
-    width: 250px;
-    align-self: center;
   }
   
   .card__content {
@@ -235,9 +232,22 @@
     gap: 1rem;
   }
 
+  .card__title {
+    font-size: 1.6rem;
+  }
+
   .card__body {
     flex-direction: column;
     align-items: flex-start;
-    /* padding-block: 1rem; */
+  }
+
+  .card__hours {
+    margin-top: 0.5rem;
+    font-size: clamp(3.2rem, 3rem + 1.5vw, 4.2rem);
+    font-weight: 300;
+  }
+
+  .card__previous {
+    font-size: 1.2rem;
   }
 }
