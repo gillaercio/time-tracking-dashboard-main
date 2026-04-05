@@ -71,7 +71,13 @@ body {
   cursor: pointer;
 }
 
+.profile__menu-item:hover {
+  color: var(--White);
+  opacity: 1;
+}
+
 .profile__menu-item--active {
+  color: var(--White);
   opacity: 1;
 }
 
@@ -126,6 +132,10 @@ body {
   border-radius: 16px;
 }
 
+.card__content:hover {
+  background-color: var(--Purple-500);
+}
+
 .card__header {
   display: flex;
   justify-content: space-between;
@@ -143,7 +153,18 @@ body {
   background-color: transparent;
   background-image: url(../images/icon-ellipsis.svg);
   background-repeat: no-repeat;
+  background-size: 75% 50%;
   cursor: pointer;
+}
+
+/* .card__menu:hover {
+  background-size: 100% 50%;
+} */
+
+.card__menu:focus {
+  color: var(--White);
+  border: none;
+  background-size: 100% 50%;
 }
 
 .card__body {
